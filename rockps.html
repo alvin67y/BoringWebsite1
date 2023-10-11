@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS</title>
+    <link rel="stylesheet" href="css/rockps.css" />
+    <script src="js/rockps.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="index.html">Let's play something</a></h1>
+      <nav>
+        <ol>
+          <li><a href="boxcreator.html">Box creator</a></li>
+          <li><a href="rockps.html">Rock, Paper, Scissor</a></li>
+        </ol>
+      </nav>
+    </header>
+
+    <section class="user">
+        <h1>Rock, Paper, Scissor!</h1>
+        <div class="selection-container">
+            <div class="selection" id="rock" value="0" onclick="select(this, 0)">
+                <img src="img/rockps/rock.png" alt="">
+            </div>
+    
+            <div class="selection" id="rock" onclick="select(this, 1)">
+                <img src="img/rockps/scissor.png" alt="">
+            </div>
+
+            <div class="selection" id="paper" onclick="select(this, 2)">
+                <img src="img/rockps/paper.png" alt="">
+            </div>
+        </div>
+
+        <button onclick="play()">Go!</button>
+    </section>
+
+    <section class="output">
+        <div class="versus">
+            <div class="player-container">
+                <div class="selection" id="user"></div>
+                You
+            </div>
+            <h1>VS</h1>
+            <div class="player-container">
+                <div class="selection" id="opponent"></div>
+                Opponent
+            </div>
+        </div>
+    </section>
+
+  </body>
+</html>

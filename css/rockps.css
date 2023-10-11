@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* HEADER */
+header {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+
+padding-inline: 20%;
+height: 4rem;
+background-color: #2d4777;
+color: white;
+}
+
+header nav ol {
+display: flex;
+flex-wrap: wrap;
+gap: 3rem;
+list-style-type: none;
+}
+
+header a {
+color: white;
+text-decoration: none;
+}
+
+header li:hover a {
+color: rgb(165, 165, 165);
+}
+/* END HEADER */
+section.user h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+section.user {
+  width: 70%;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.selection-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+div.selection {
+  width: 13rem;
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
+  
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+div.selection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  padding: 1.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+button:active {
+  background-color: rgb(243, 243, 243);
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+section.output {
+  margin-top: 4rem;
+}
+
+section.output h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+div.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.versus {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}

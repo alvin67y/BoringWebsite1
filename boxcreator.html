@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Creator</title>
+    <link rel="stylesheet" href="css/boxcreator.css" />
+    <script src="js/boxcreator.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="index.html">Let's play something</a></h1>
+      <nav>
+        <ol>
+          <li><a href="boxcreator.html">Box creator</a></li>
+          <li><a href="rockps.html">Rock, Paper, Scissor</a></li>
+        </ol>
+      </nav>
+    </header>
+
+    <section class="user">
+      <h1>Boxes Creator</h1>
+      <br>
+      <form >
+        <div class="grouper">
+          <p>Please enter how many boxes you wanted to create:</p>
+          <input type="text" id="boxNum" placeholder="eg. 1, 2, 3,..." required>
+        </div>
+        
+        <div class="grouper">
+          <p>Select a shape:</p>
+          <input type="radio" name="shape" id="square" checked> <label for="square">Square</label>
+          <input type="radio" name="shape" id="circle"> <label for="circle">Circle</label>
+        </div>
+        
+        <div class="grouper">
+          <p>Please select your desired colour:</p>
+          <input type="color" id="color" value="#2d4777">
+        </div>
+  
+        <button onclick="formValid()">Generate</button>
+      </form>
+      
+    </section>
+    
+    <section class="boxes">
+    </section>
+  </body>
+</html>
